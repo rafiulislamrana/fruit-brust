@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c206159380.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    
     <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "fruit-primary": '#F85559',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
     <header>
-        <div class="container mx-auto">
-            <div class="navbar bg-base-100">
+        <div class="container mx-auto ">
+            <div class="navbar bg-fruit-primary rounded-full px-14 py-8 mt-10">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
+                      <li><a class="text-lg text-white">Home</a></li>
+                      <li><a class="text-lg text-white">About Us</a></li>
+                      <li><a class="text-lg text-white">Shop</a></li>
+                      <li><a class="text-lg text-white">All Fruits</a></li>
                     </ul>
                   </div>
 
                 <div class="navbar-center">
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                  <img src="images/Group 2 (1).png" alt="">
                 </div>
                 
                 <div class="navbar-end">
-                    <div class="hidden lg:flex form-control">
-                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    <div class="hidden relative lg:flex lg:flex-row lg:items-center form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered md:w-auto rounded-[50px]" />
+                        <i class="fa-solid fa-magnifying-glass absolute right-3 " style="color: #121212;"></i>
                     </div>
                     <div class="dropdown dropdown-end">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
