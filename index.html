@@ -24,7 +24,7 @@
 <body>
     <header>
         <div class="container mx-auto ">
-            <div class="navbar bg-fruit-primary rounded-full px-14 py-8 mt-10">
+            <div class="navbar justify-between md:bg-fruit-primary md:rounded-full md:px-14 py-8 mt-10">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                       <li><a class="text-lg text-white">Home</a></li>
@@ -35,7 +35,8 @@
                   </div>
 
                 <div class="navbar-center">
-                  <img src="images/Group 2 (1).png" alt="">
+                  <img class="hidden md:grid" src="images/Group 2 (1).png" alt="">
+                  <img class="flex md:hidden w-full" src="images/Group 2 (2).png" alt="">
                 </div>
                 
                 <div class="navbar-end">
@@ -47,7 +48,7 @@
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabindex="0" style="background-color: #fff; opacity: 1;" class="menu menu-sm dropdown-content mt-3 z-50j p-2 shadow bg-white rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -61,8 +62,8 @@
     <main>
       <section>
         <div class="container mx-auto my-14">
-          <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full ">
+          <div class="carousel w-full rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full rounded-lg">
               <img src="images/banner1.png" class="w-full" />
               <div class="absolute overlay-test w-full h-full bg-gradient-to-b from-black to-[#ffffff00] z-10 opacity-60">
 
